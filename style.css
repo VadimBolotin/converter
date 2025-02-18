@@ -4,6 +4,7 @@
 } */
 .courses {
   display: flex;
+  justify-content: center;
   margin-bottom: 15px;
 }
 
@@ -43,10 +44,16 @@
   .col-6.col {
     max-width: 100%;
   }
+  .card.pad {
+    padding: 0.6rem !important;
+  }
   .card.cardmin {
     min-width: unset;
   }
   .course-item-value {
     font-size: 30px;
+  }
+  .course-item-title {
+    font-size: 14px;
   }
 }
