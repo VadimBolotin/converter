@@ -27,6 +27,7 @@ setInterval(getCurrencies, 10000)
 async function getCurrencies () {
     const response = await fetch('https://www.cbr-xml-daily.ru/daily_json.js');
     const data = await response.json();
+    console.log(`Текущий день показателя ${data.Date}`)
     const result = await data;
 
     rates.USD = result.Valute.USD;
@@ -67,8 +68,6 @@ async function getCurrencies () {
         elementGBP.classList.remove('top');
         elementGBP.classList.remove('bottom');
     }
-
-    console.log('Обновление')
 }
 
 // Слушаем изменения в текстовом поле и в select
