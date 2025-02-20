@@ -67,6 +67,8 @@ async function getCurrencies () {
         elementGBP.classList.remove('top');
         elementGBP.classList.remove('bottom');
     }
+
+    console.log('Обновление')
 }
 
 // Слушаем изменения в текстовом поле и в select
